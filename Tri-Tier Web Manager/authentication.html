@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tri-Tier Web Manager</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .top-third {
+      flex: 35;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid grey;
+      padding: 20px;
+    }
+
+    .middle-third {
+      flex: 35;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid grey;
+      padding: 20px;
+    }
+
+    .bottom-third {
+      flex: 30;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .yellow-text {
+      color: #FFD700; /* Bright yellow */
+      font-size: 36px; /* Larger font size */
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .green-text {
+      color: #00FF00; /* Bright green */
+      font-size: 24px; /* Larger font size */
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px; /* Bring down the second line slightly */
+    }
+
+    .red-text {
+      color: #FF0000; /* Bright red */
+      font-size: 16px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .text-input-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 15px;
+      justify-content: center;
+    }
+
+    .text-input-label {
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .text-input {
+      padding: 10px;
+      max-width: 200px; 
+    }
+
+    .button {
+      background-color: #404040; /* Darker grey */
+      color: #00FF00; /* Bright green */
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top-third">
+      <p class="yellow-text">Welcome to the Enterprise System</p>
+      <p class="green-text">A Servlet/JSP-based Multi-tiered Enterprise Application Using A Tomcat Container</p>
+      <p class="red-text">- User Authentication Page -</p>
+    </div>
+
+    <div class="middle-third">
+<form action="/Project-4/AuthenticationServlet" method="POST">
+        <div class="text-input-container">
+          <label class="yellow-text text-input-label" for="username">UserName:</label>
+          <input type="text" name="username" id="username" class="text-input" placeholder="Enter your username">
+        </div>
+
+        <div class="text-input-container">
+          <label class="yellow-text text-input-label" for="password">Password:</label>
+          <input type="password" name="password" id="password" class="text-input" placeholder="Enter your password">
+        </div>
+
+        <button type="submit" class="button">Click To Authenticate</button>
+      </form>
+    </div>
+
+    <div class="bottom-third"></div>
+  </div>
+
+</body>
+</html>

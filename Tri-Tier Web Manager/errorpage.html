@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .top-section {
+      flex: 35;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+    .blue-rectangle {
+      background-color: #000080; 
+      padding: 20px; 
+      border-radius: 10px; 
+    }
+
+    .middle-section {
+      flex: 35;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+    .bottom-section {
+      flex: 30;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+    .white-text {
+      color: white;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .red-text {
+      color: red;
+      font-size: 60px; /* Increased font size */
+      font-weight: bold;
+    }
+
+    .light-green-text {
+      color: #00FF00; /* Lime Green */
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="top-section">
+      <div class="blue-rectangle">
+        <p class="white-text">Enterprise System</p>
+      </div>
+    </div>
+
+    <div class="middle-section">
+      <p class="red-text">Authentication Error</p>
+    </div>
+
+    <div class="bottom-section">
+      <p class="light-green-text">Access To System Is Denied. Please Try Again.</p>
+    </div>
+  </div>
+
+</body>
+</html>
